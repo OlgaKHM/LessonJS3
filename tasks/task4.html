@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Задача 4</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h2>Задача 4.</h2>
+      <p>
+        З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у
+        садочку, школярем, студентом, працівником, пенсіонером).
+      </p>
+    </div>
+
+    <script>
+      //ввести данні
+      let userAge = parseInt(prompt("Введіть вік людини", "1"));
+      const maxChildAge = 6;
+      const maxSchoolAge = 17;
+      const maxStudentAge = 23;
+      const maxWorkerAge = 65;
+
+      //знаходимо результат і виводимо
+      if (userAge < maxChildAge) document.write(`<h3>дитина у садочку</h3>`);
+      else if (userAge <= maxSchoolAge) document.write(`<h3>школяр</h3>`);
+      else if (userAge <= maxStudentAge) document.write(`<h3>студент</h3>`);
+      else if (userAge <= maxWorkerAge) document.write(`<h3>працівник</h3>`);
+      else document.write(`<h3> пенсіонер </h3>`);
+    </script>
+  </body>
+</html>

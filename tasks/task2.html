@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Задача 2</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h2>Задача 2.</h2>
+      <p>
+        З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не
+        вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то
+        пропонуємо купити лотерею за 4 грн.
+      </p>
+    </div>
+    <script>
+      //ввести данні
+      let priceProduct = parseFloat(prompt("Введіть ціну товару", "0"));
+      let amountMoney = parseFloat(prompt("Введіть кількість грошей", "0"));
+      const ticketPrice = 4;
+      //знаходимо результат
+      if (priceProduct > amountMoney)
+        document.write(
+          `<h3> Вам у покупці відмовлено.</h3>`
+        ); //виводимо результат
+      else if (priceProduct + ticketPrice <= amountMoney)
+        document.write(
+          `<h3> Пропонуємо Вам купити лотерею за 4 грн.</h3>`
+        ); //виводимо результат
+      else document.write(`<h3> Дякуемо за покупку. </h3>`); //виводимо результат
+    </script>
+  </body>
+</html>

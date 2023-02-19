@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Задача 7</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h2>Задача 7.</h2>
+      <p>
+        З клавіатури вводиться номер місяця. Вивести до якої пори він
+        відноситься.
+      </p>
+    </div>
+
+    <script>
+      //ввести данні
+      let numberMonth = parseInt(prompt("Введіть номер місяця", "1"));
+
+      //знаходимо результат і виводимо
+
+      if (numberMonth === 12 || numberMonth <= 2)
+        document.write(`<h3>ЗИМА</h3>`);
+      else if (numberMonth <= 5) document.write(`<h3>ВЕСНА</h3>`);
+      else if (numberMonth <= 8) document.write(`<h3>ЛІТО</h3>`);
+      else if (numberMonth <= 11) document.write(`<h3>ОСІНЬ</h3>`);
+      else document.write(`<h3> Ви ввели неправильне значення. </h3>`);
+    </script>
+  </body>
+</html>

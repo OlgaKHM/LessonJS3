@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&family=Montserrat:wght@400;600&display=swap"
+		rel="stylesheet">
+	<title>Задача 1</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h2>Задача 1.</h2>
+		<p>З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не
+			екран ім’я тієї дитини, у
+			якої кількість цукерок є більшою, або вивести, що кількість однакова.
+		</p>
+	</div>
+	<script>
+		//ввести данні
+		let childName1 = String(prompt("Введіть ім'я першої дитини", "ім'я"))
+		let candyNamber1 = parseInt(prompt("Введіть кількість цукерок у першої дитини", "1"))
+		let childName2 = String(prompt("Введіть ім'я другої дитини", "ім'я"))
+		let candyNamber2 = parseInt(prompt("Введіть кількість цукерок у другої дитини", "1"))
+
+		//знаходимо результат
+		if (candyNamber1 === candyNamber2)
+			document.write(`<h3>кількість цукерок однакова</h3>`)
+		else if (candyNamber1 > candyNamber2)
+			document.write(`<h3>${childName1} має більше цукерок</h3>`)
+		else
+			document.write(`<h3>${childName2} має більше цукерок</h3>`)
+	</script>
+</body>
+
+</html>
